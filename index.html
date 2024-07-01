@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body class="bg-gray-50">
+     <h1 class="text-white py-4 text-center text-2xl bg-red-600">Weather Dashboard</h1>
+     <div class="container flex flex-col items-center p-8">
+        <div class="weather-input w-full max-w-md">
+            <h3 class="text-lg mb-2">Enter a City Name</h3>
+            <input type="text" placeholder="Ex... India, Japan, USA" class="w-full h-12 mb-4 p-2 border border-gray-300 rounded-lg">
+            <button class="w-full py-2 mb-2 text-white bg-red-700 rounded-lg">Search</button>
+            <button class="w-full py-2 text-white bg-gray-700 rounded-lg">Use Current Location</button>
+        </div>
+     </div>
+     <div class="weather-data w-full max-w-5xl mx-auto mt-8">
+        <div class="current-weather flex justify-between items-center p-5 bg-blue-600 text-white rounded-lg">
+            <div class="details">
+               <h2 class="text-xl">London (2023-06-19)</h2> 
+               <h4 class="text-lg">Temperature: 19.10&deg;C</h4>
+               <h4 class="text-lg">Wind: 4.31M/S</h4>
+               <h4 class="text-lg">Humidity: 79%</h4>
+            </div>
+            <div class="icon text-center">
+                <img src="images/weather icon.avif" alt="weathericon" class="w-20 h-20 mx-auto">
+                <h4 class="text-lg">Sunny</h4>
+            </div>
+        </div>
+        <div class="days-forecast mt-8">
+            <ul class="weather-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <li class="card bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl">(2023-06-19)</h2> 
+                    <img src="images/weather icon.avif" alt="weather-icons" class="w-16 h-16 mx-auto">
+                    <h4 class="text-lg">Temperature: 19.10&deg;C</h4>
+                    <h4 class="text-lg">Wind: 4.31M/S</h4>
+                    <h4 class="text-lg">Humidity: 79%</h4>
+                </li>
+                <!-- Repeat the above <li> for each day in the forecast -->
+                <li class="card bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl">(2023-06-19)</h2> 
+                    <img src="images/weather icon.avif" alt="weather-icons" class="w-16 h-16 mx-auto">
+                    <h4 class="text-lg">Temperature: 19.10&deg;C</h4>
+                    <h4 class="text-lg">Wind: 4.31M/S</h4>
+                    <h4 class="text-lg">Humidity: 79%</h4>
+                </li>
+                <li class="card bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl">(2023-06-19)</h2> 
+                    <img src="images/weather icon.avif" alt="weather-icons" class="w-16 h-16 mx-auto">
+                    <h4 class="text-lg">Temperature: 19.10&deg;C</h4>
+                    <h4 class="text-lg">Wind: 4.31M/S</h4>
+                    <h4 class="text-lg">Humidity: 79%</h4>
+                </li>
+                <li class="card bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl">(2023-06-19)</h2> 
+                    <img src="images/weather icon.avif" alt="weather-icons" class="w-16 h-16 mx-auto">
+                    <h4 class="text-lg">Temperature: 19.10&deg;C</h4>
+                    <h4 class="text-lg">Wind: 4.31M/S</h4>
+                    <h4 class="text-lg">Humidity: 79%</h4>
+                </li>
+                <li class="card bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl">(2023-06-19)</h2> 
+                    <img src="images/weather icon.avif" alt="weather-icons" class="w-16 h-16 mx-auto">
+                    <h4 class="text-lg">Temperature: 19.10&deg;C</h4>
+                    <h4 class="text-lg">Wind: 4.31M/S</h4>
+                    <h4 class="text-lg">Humidity: 79%</h4>
+                </li>
+            </ul>
+        </div>
+     </div>
+</body>
+</html>
